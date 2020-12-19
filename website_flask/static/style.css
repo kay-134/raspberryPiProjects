@@ -1,0 +1,40 @@
+/* CSS files add styling rules to your content */
+
+html{
+  background-image: url('https://cdn.glitch.com/f4dd0a05-3ce2-4dba-b39f-ecc6c7b8ba7f%2Fspace-nasa-purple.jpg?v=1594639819402');
+
+  
+    
+}
+
+body {
+  font-family: 'Shrikhand', monospace;
+  margin: 2em;
+}
+
+h1 {
+  color: white;
+  font-size: 350%;
+  margin: 0em;
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+}
+
+h2 {
+  color: white;
+  font-size: 200%;
+  margin: 0em;
+  font-family: 'Shrikhand', cursive;
+  
+
+}
+h3 {
+  color: white;
+  font-size: 180%;
+  margin: 0em;
+  
+
+}
+
+/*  w3 schools*/
+/* Adobe color */
