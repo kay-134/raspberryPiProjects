@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nasa Image of the Day</title>
+</head>
+<body>
+    <h1>Here is Nasa's image of the day!</h1>
+
+    <!--gets the title property of the image and displays the title of the image of the day -->
+    <h3>{{data['title']}}</h3>
+
+    <!-- dependning on the media type of the star Nasa captured for that day, that media type will be displayed-->
+
+    <!-- if it's a video, a video will be displayed-->
+    {% if data['media_type']== "video" %}
+        <iframe width="420" height = "315" src="{{data['url']}}"></iframe>
+
+    <!-- if it's an image, an image will be displayed-->
+    {% else %}
+        <img src="{{data['url']}}">
+
+    <!--must have endif to let to computer know the if statement is over-->
+    {% endif %}
+        <p>{{data['explanation']}}</p>
+
+
+</body>
+</html>
