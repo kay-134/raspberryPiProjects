@@ -18,6 +18,7 @@ def index():
 
 @app.route('/api/v1/album', methods=['GET'])
 def album_json():
+    #using with allows for opening and closing of file
     album_info = os.path.join(app.static_folder, 'data', 'album.json')
     with open(album_info, 'r') as json_data:
         json_info = json.load(json_data)
@@ -44,13 +45,13 @@ def search_title():
                 results.append(movie)
                 
             else:
-                return render_template("movies.html", results=results)
+                return render_template("movie.html", results=results)
 
     if len(results) < 1: 
         return "No results found"
          
     else:
-        return render_template("movies.html", results=results)
+        return render_template("movie.html", results=results)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0'), 
