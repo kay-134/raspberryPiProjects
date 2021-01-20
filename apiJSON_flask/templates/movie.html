@@ -3,15 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="static/style.css">
+    <style>
+        html{
+            background-image: url('https://aspenfilm.org/wp-content/uploads/2015/11/blank-movie-screen.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            
+        }
+    
+        body {
+            font-family: 'Shrikhand', monospace;
+            margin: 2em;
+        }
+    
+        h1 {
+            color: black;
+            font-size: 550%;
+            margin: 0em;
+            text-align: center;
+            font-family: 'Shrikhand', cursive;
+    
+        }
+    
+        h2 {
+            color: black;
+            font-size: 300%;
+            margin: 1em;
+            font-family: 'Shrikhand', cursive;
+        }
+
+        h3 {
+            color: black;
+            font-size: 280%;
+            margin: 1em; 
+        }
+    </style>
     <title>Document</title>
 </head>
-<body>
-    <h1>Movies</h1>
-    {%for result in results%}
-    <div class="movie_div">
-        <h3>{{result['title']}}</h3>
-        <p>Year Released: {{result['year']}}</p>
-    </div>
-    {%endfor%}
-</body>
+    <body>
+        <center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1>Movies</h1>
+            <br>
+            <br>
+            <br>
+            {%for result in results%}
+            <div class="movie_div">
+                <h2>{{result['title']}}</h3>
+                <h3>Year Released: {{result['year']}}</p>
+            </div>
+            {%endfor%}
+        </center>
+        
+    </body>
 </html>
