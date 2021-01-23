@@ -10,25 +10,25 @@ def index():
 def red():
     name = "red"
     background = "red"
-    return render_template('index.html', name = name)
+    return render_template('index.html', name = name, background = background)
 
 @app.route('/orange')
 def orange():
     name = "orange"
     background = "orange"
-    return render_template('index.html', name = name)
+    return render_template('index.html', name = name, background = background)
 
 @app.route('/yellow')
 def yellow():
     name = "yellow"
     background = "yellow"
-    return render_template('index.html', name = name)
+    return render_template('index.html', name = name, background = background)
 
 @app.route('/green')
 def green():
     name = "green"
     background = "green"
-    return render_template('index.html', name = name)
+    return render_template('index.html', name = name, background = background)
 
 @app.route('/blue')
 def blue():
