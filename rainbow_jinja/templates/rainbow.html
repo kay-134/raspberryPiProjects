@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+        <title>Kayley</title>
+        <style>
+            body {
+                font-family: 'Merriweather', serif;
+                margin: 2em;
+                background-color: white;
+            }
+            
+            h1 {
+               font-style: italic;
+               color: #000000;
+            }
+	    
+            a{
+               font-size: 700%;
+               color: black;
+            }
+           
+            a:link {
+                text-decoration: none;
+            }
+
+            a:visited {
+                text-decoration: none;
+            }
+
+            a:hover {
+  		text-decoration: underline;
+            }
+
+            a:active {
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1>Kayley's Rainbow</h1>
+            {% for color in colors %}
+                 <a href="/{{color}}">{{color}}</a>
+                 &nbsp
+                 &nbsp
+                 &nbsp
+                 &nbsp
+                 &nbsp
+                 &nbsp
+            {% endfor %}
+        </center>
+    </body>
+</html> 
